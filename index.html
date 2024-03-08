@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icons/Favicon.ico" type="image/x-icon">
+    <title>Netflix | Survey Form</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    
+    <header id="header">
+        <nav id="navbar">
+            <div id="img-logo">
+                <a>
+                    <img src="/assets/img/Netflix_Logo_RGB.png" alt="Netflix logo" width="90px" height="30px">
+                </a>
+            </div>
+
+            <div id="navbar-title">
+                <h2>Survey Form</h2>
+            </div>
+
+            <div id="links">
+                <div>
+                    <a id="join-link"href="https://www.netflix.com/signup">Join Netflix</a>
+                </div>
+
+                <div>
+                    <a id="sign-link"href="https://www.netflix.com/login?nextpage=https%3A%2F%2Fhelp.netflix.com%2Fcontactus">Sign In</a>
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div id="beginning">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Your opinion counts! Help us make Netflix even better</p>
+        </div>
+
+
+        <fieldset>
+            <form id="survey-form" action="#">
+
+                <h2>Personal data</h2>
+                
+                <label id="name-label">Name:</label>
+                <input id="name" type="text" placeholder="Write your name" required>
+
+                <label id="email-label">E-mail:</label>
+                <input id="email" type="email" placeholder="Write your E-mail" required>
+
+                <label id="number-label">Age:</label>
+                <input id="number" type="number" min="1" max="120" placeholder="Write your age">
+
+                <hr>
+                <!-- Survey begins-->
+
+                <h2>User experience</h2>
+
+                <label for="frecuency">How often do you use Netflix?</label>
+                <select id="dropdown" name="frecuency">
+                    <option>Select the frecuency</option>
+                    <option value="once-a-month">Once a month</option>
+                    <option value="few-times-week">A few times a week</option>
+                    <option value="everyday">Everyday</option>
+                </select>
+
+                <h3></h3>
+
+                <label for="device">What device do you use with Netflix?</label>
+                <select id="device" name="device">
+                    <option>Select the device</option>
+                    <option value="smartphone">Smartphone</option>
+                    <option value="tablet">Tablet</option>
+                    <option value="computer">Computer</option>
+                    <option value="smart-tv">Smart TV</option>
+                </select>
+
+                <h3></h3>
+
+                <label for="difficulty">How would you rate the ease of use of the Netflix platform?
+                    <div class="radio-options">
+                        <div>
+                            <input id="very-difficult" type="radio" name="difficulty" value="very-difficult">Very difficult</input>
+                        </div>
+                        <div>
+                            <input id="difficulty" type="radio" name="difficulty" value="difficult">Difficult</input>
+                        </div>
+                        <div>
+                            <input id="normal" type="radio" name="difficulty" value="normal">Normal</input>
+                        </div>
+                        <div>
+                            <input id="easy" type="radio" name="difficulty" value="easy">Easy</input>
+                        </div>
+                        <div>
+                            <input id="very-easy" type="radio" name="difficulty" value="very-easy">Very easy</input>
+                        </div>
+                    </div>
+                </label>
+
+                <hr>
+
+                <h2>Type of content</h2>
+
+                <label for="type-content">What type of content do you usually watch on Netflix?</label>
+                <select id="type-content" name="type-content">
+                    <option value="movies">Select the content</option>
+                    <option value="movies">Movies</option>
+                    <option value="documentaries">Documentaries</option>
+                    <option value="series">Series</option>
+                    <option value="mini-series">Mini series</option>
+                </select>
+
+                <label for="content">Are you satisfied with the content available on Netflix?
+                    <div class="radio-options">
+                        <div>
+                            <input id="yes" type="radio" name="content" value="yes">Yes</input>
+                        </div>
+                        <div>
+                            <input id="can-be-better" type="radio" name="content" value="can-be-better">It can be better</input>
+                        </div>
+                        <div>
+                            <input id="no" type="radio" name="content" value="no">No</input>
+                        </div>
+                        
+                    </div>
+                </label>
+
+                <h3></h3>
+
+                <label for="genres">What genres or categories of content would you like to see more of on Netflix?
+                    <div class="checkbox-options">
+                        <div class="option">
+                            <input type="checkbox" value="action">Action</input>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" value="adventure">Adventure</input>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" value="catastrophe">Catastrophe</input>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" value="science-fiction">Science fiction</input>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" value="comedy">Comedy</input>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" value="documentaries">Documentaries</input>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" value="drama">Drama</input>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" value="fantasy">Fantasy</input>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" value="musicals">Musicals</input>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" value="suspense">Suspense</input>
+                        </div>
+                        <div class="option">
+                            <input type="checkbox" value="horror">Horror</input>
+                        </div>
+                    </div>
+                </label>
+
+                <hr>
+
+                <h2>Recommendations and Personalization</h2>
+
+                <label for="preferences">Do you feel that Netflix's recommendations fit your tastes and preferences?
+                    <div class="radio-options">
+                        <div>
+                            <input id="very-accurate" type="radio" name="preferences" value="very-accurate">Very accurate</input>
+                        </div>
+                        <div>
+                            <input id="regular" type="radio" name="preferences" value="regular">Regular</input>
+                        </div>
+                        <div>
+                            <input id="very-wrong" type="radio" name="preferences" value="very-wrong">Very wrong</input>
+                        </div>
+                        
+                    </div>
+                </label>
+
+                <hr>
+
+                <h2>Overall Satisfaction:</h2>
+
+                <label for="satisfaction">How satisfied are you with your overall experience using Netflix?
+                    <div class="radio-options">
+                        <div>
+                            <input id="very-satisfied" type="radio" name="satisfaction" value="very-satisfied">Very satisfied</input>
+                        </div>
+                        <div>
+                            <input id="is-ok" type="radio" name="satisfaction" value="is-ok">It's okay</input>
+                        </div>
+                        <div>
+                            <input id="very-dissatisfied" type="radio" name="satisfaction" value="very-dissatisfied">Very dissatisfied</input>
+                        </div>
+                        
+                    </div>
+                </label>
+
+                <label for="recommend">Would you recommend Netflix to your friends and family?
+                    <div class="radio-options">
+                        <div>
+                            <input id="totally" type="radio" name="recommend" value="totally">Totally</input>
+                        </div>
+                        <div>
+                            <input id="maybe" type="radio" name="recommend" value="maybe">Maybe</input>
+                        </div>
+                        <div>
+                            <input id="never" type="radio" name="recommend" value="never">Never</input>
+                        </div>
+                        
+                    </div>
+                </label>
+
+                <hr>
+
+                <h2>We listen to you</h2>
+
+                <p id="contact">Do you have any suggestions, complaints or comments? Write it here.</p>
+
+                <textarea rows="6" cols="16"></textarea>
+
+                <div id="button">
+                    <button id="submit" type="submit" value="Send">Send</button>
+                </div>
+                
+            </form>
+        </fieldset>
+
+    </section>
+
+    <footer>
+        <div id="select-languajes">
+            <select id="select-languaje">
+                <option value="english">English</option>
+                <option value="spanish">Spanish</option>
+                <option value="portuguese">Portuguese</option>
+            </select>
+        </div>
+        <div id="footer-links">
+            <a href="https://help.netflix.com/en/legal/termsofuse" target="_blank">Terms of Use</a>
+            <a href="https://help.netflix.com/en/legal/privacy" target="_blank">Privacy</a>
+            <a href="https://help.netflix.com/en/legal/privacy#cookies" target="_blank">Cookie Preferences</a>
+            <a href="https://help.netflix.com/en/legal/corpinfo" target="_blank">Corporate Information</a>
+        </div>
+    </footer>
+
+</body>
+</html>

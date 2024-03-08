@@ -1,0 +1,256 @@
+:root {
+    --red: #E50914;
+    --black: #000000;
+    --titleColor: #F5F5F1;
+    --linksColor: #FFFFFF;
+    --borderLinks: #5A5A5A;
+    --fontColor: #221F1F;
+    --borderOptions: #D5D4D1;
+    --hr: #babab7;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+
+#header {
+    width: 100%;
+    background-color: var(--black);
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 5rem;
+    width: 100%;
+}
+
+#img-logo img {
+    width: 12rem;
+    height: 5rem;
+}
+
+#navbar-title h2 {
+    color: var(--titleColor);
+    font-size: 18px;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+}
+
+a#join-link {
+    color: var(--linksColor);
+    padding: 5px 16px 6px;
+    text-decoration: none;
+    border: 2px solid var(--borderLinks);
+    border-radius: 4px;
+    margin: 2px 8px;
+    font-size: 14px;
+}
+
+a#sign-link {
+    color: var(--linksColor);
+    padding: 5px 16px 6px;
+    text-decoration: none;
+    background-color: var(--red);
+    margin: 2px 8px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+/* Survey form */
+
+fieldset {
+    display: flex;
+    text-align: center; 
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    width: 0 auto;
+    margin: 2rem 5rem;
+    border: none;
+}
+
+#beginning {
+    padding: 0rem 5rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+h1#title {
+    color: var(--fontColor);
+    font-size: 32px;
+    margin: 2rem 0rem;
+    font-weight: 550;
+}
+
+p#description {
+    color: var(--fontColor);
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 18px;
+    color: var(--fontColor);
+    text-align: left;
+    
+}
+
+label {
+    padding: 1rem 0rem;
+    font-size: 16px;
+    text-align: left;
+}
+
+input {
+    border: 1px solid var(--borderOptions);
+    border-radius: 4px;
+    padding: 7px 16px;
+}
+
+select {
+    padding: 1rem;
+    margin: 1rem 0rem;
+    border-radius: 4px;
+    border: 1px solid var(--borderOptions);
+}
+
+hr {
+    border: 1px solid var(--hr);
+    margin: 2.5rem 0rem;
+    width: 100%;
+}
+
+.radio-options {
+    margin: 1rem 0rem;
+    display: flex;
+    flex-direction: row;
+    padding: 0rem 1rem;
+}
+
+.checkbox-options {
+    margin: 1rem 0rem;
+}
+
+.checkbox-options br {
+    padding: 0.2rem;
+}
+
+div.option {
+    padding: 4px 1px;
+}
+
+p#contact {
+    padding: 1rem 0rem;
+    font-size: 16px;
+} 
+
+textarea {
+    margin: 1rem 0rem 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#button {
+    display: flex;
+    justify-content: right;
+}
+
+button#submit {
+    padding: 1rem 5rem;
+    margin: 0.5rem 1rem;
+    background-color: var(--red);
+    border: 1ps solid var(--borderLinks);
+    color: var(--linksColor);
+    border-radius: 4px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    padding: 0rem 7rem 5rem;
+    background: linear-gradient(10deg, rgba(229, 9, 20, 0) 58%, rgb(229, 9, 20) 128%),#000;
+    width: 100%;
+}
+
+#select-languajes {
+    margin: 2rem 0rem;
+    color: var(--linksColor);
+    border: var(--borderOptions);
+    border-radius: 4px;
+    background: none;
+}
+
+#select-languaje {
+    background: none;
+    color: var(--linksColor);
+}
+
+
+#footer-links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#footer-links a {
+    padding: 1rem 0rem;
+    font-size: 18px;
+    color: var(--linksColor);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+@media (max-width: 480px) {
+
+    #navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #navbar-title h2 {
+        padding: 1rem;
+        margin: 0;
+    }
+
+    #links {
+        padding: 2rem;
+    }
+
+    a#join-link {
+        margin: 1rem;
+    }
+
+    .radio-options {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
